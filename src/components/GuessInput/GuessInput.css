@@ -1,0 +1,46 @@
+/* GuessInput.css */
+.autocomplete-container {
+    position: relative;                      /* potrzebne do listy pod inputem :contentReference[oaicite:8]{index=8} */
+    margin-bottom: 1rem;
+}
+
+.guess-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    color: var(--fg);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;      /* delikatna animacja focus :contentReference[oaicite:9]{index=9} */
+}
+.guess-input:focus {
+    outline: none;
+    border-color: var(--correct);
+}
+
+.suggestions {
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--suggest-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 0 0 8px 8px;
+    max-height: 160px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.suggestion-item:hover {
+    background: var(--suggest-hover);
+}

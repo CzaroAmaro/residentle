@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Conrad Hawkins",
+    "gender": "Male",
+    "profession": "Physician",
+    "occupation": "Resident, Attending Physician, Chief Resident",
+    "specialty": "Internal Medicine",
+    "title": "M.D.",
+    "affiliation": "Chastain Park Memorial Hospital"
+  },
+  {
+    "id": 2,
+    "name": "Nicolette Nevin",
+    "gender": "Female",
+    "profession": "Nurse",
+    "occupation": "Nurse Practitioner",
+    "specialty": "Nursing",
+    "title": "M.S.N, N.P.",
+    "affiliation": "Chastain Park Memorial Hospital"
+  },
+  {
+    "id": 3,
+    "name": "Devon Pravesh",
+    "gender": "Male",
+    "profession": "Physician",
+    "occupation": "Resident, Attending Physician, Clinical Trials Specialist",
+    "specialty": "Internal Medicine",
+    "title": "M.D.",
+    "affiliation": "Chastain Park Memorial Hospital"
+  },
+  {
+    "id": 4,
+    "name": "August Jeremiah Austin",
+    "gender": "Male",
+    "profession": "Physician",
+    "occupation": "Attending Physician, Surgeon, Cardiothoracic Surgeon, General Surgeon, Trauma Surgeon",
+    "specialty": "Cardiothoracic Surgery",
+    "title": "M.D., F.A.C.S.",
+    "affiliation": "Chastain Park Memorial Hospital"
+  },
+  {
+    "id": 5,
+    "name": "Randolph Bell",
+    "gender": "Male",
+    "profession": "Physician",
+    "occupation": "Attending Physician, Surgeon, General Surgeon, Chief of Surgery, CEO",
+    "specialty": "General Surgery",
+    "title": "M.D., F.A.C.S.",
+    "affiliation": "Chastain Park Memorial Hospital"
+  },
+  {
+    "id": 6,
+    "name": "Mina Okafor",
+    "gender": "Female",
+    "profession": "Physician",
+    "occupation": "Resident, Surgeon, Cardiothoracic Surgeon",
+    "specialty": "Cardiothoracic Surgery, General Surgery",
+    "title": "M.D.",
+    "affiliation": "Chastain Park Memorial Hospital"
+  }
+]

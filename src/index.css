@@ -1,0 +1,58 @@
+/* index.css */
+:root {
+    /* kolorystyka dark mode */
+    --bg: #1e1e1e;
+    --fg: #eee;
+    --tile-bg: #262626;
+    --tile-border: #333;
+    --correct: #04c134;
+    --partial: #bc6f12;
+    --input-bg: #2a2a2a;
+    --input-border: #444;
+    --suggest-bg: #2a2a2a;
+    --suggest-hover: #3a3a3a;
+
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: dark;                      /* wymusza dark mode form controls :contentReference[oaicite:4]{index=4} */
+    color: var(--fg);
+    background-color: var(--bg);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;                 /* centrowanie poziome */
+    align-items: center;                     /* centrowanie pionowe :contentReference[oaicite:5]{index=5} */
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 480px;
+    padding: 1rem;
+    box-shadow:
+        /* neumorphic outer shadows :contentReference[oaicite:6]{index=6} */
+            4px 4px 8px rgba(0,0,0,0.6),
+            -4px -4px 8px rgba(255,255,255,0.05);
+    border-radius: 12px;
+    background: var(--tile-bg);
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    background-color: var(--tile-bg);
+    color: var(--fg);
+    cursor: pointer;
+    transition: border-color 0.25s ease;      /* płynne hover :contentReference[oaicite:7]{index=7} */
+}
+button:hover {
+    border-color: var(--correct);
+}
