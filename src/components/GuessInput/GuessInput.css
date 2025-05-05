@@ -1,6 +1,6 @@
-/* GuessInput.css */
+
 .autocomplete-container {
-    position: relative;                      /* potrzebne do listy pod inputem :contentReference[oaicite:8]{index=8} */
+    position: relative;
     margin-bottom: 1rem;
 }
 
@@ -13,7 +13,7 @@
     color: var(--fg);
     font-size: 1rem;
     box-sizing: border-box;
-    transition: border-color 0.2s ease;      /* delikatna animacja focus :contentReference[oaicite:9]{index=9} */
+    transition: border-color 0.2s ease;
 }
 .guess-input:focus {
     outline: none;

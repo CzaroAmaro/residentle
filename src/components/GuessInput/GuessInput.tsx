@@ -46,7 +46,7 @@ export default function GuessInput({ onEnter, guesses }: Props) {
                 value={val}
                 onChange={e => setVal(e.currentTarget.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Wpisz nazwę postaci i naciśnij Enter"
+                placeholder="Search character"
             />
             {suggestions.length > 0 && (
                 <ul className="suggestions">
