@@ -43,7 +43,7 @@ export default function App() {
 
     return (
         <div className="app-container">
-            <GuessInput guesses={guesses} onEnter={handleGuess} />
+            <GuessInput guesses={guesses} onEnter={handleGuess}/>
 
             <div className="category-row">
                 {propsToCheck.map(prop => (
@@ -54,15 +54,19 @@ export default function App() {
             </div>
 
             <div className="guesses-wrapper">
-                {guesses.map((g, i) => (
-                    <GuessRow key={i} guess={g} solution={solution} />
+                {guesses.map(g => (
+                    <GuessRow
+                    key={g}
+                    guess={g}
+                    solution={solution}
+                    />
                 ))}
             </div>
 
             {isSolved && (
                 <>
                     <div className="congrats">
-                        🎉 Brawo! To na pewno {solution.name}! 🎉
+                        🎉 Brawo! To {solution.name}! 🎉
                     </div>
                     <Confetti
                         width={width}

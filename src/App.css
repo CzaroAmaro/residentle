@@ -18,19 +18,10 @@ body {
     min-height: 100vh;
 }
 
-.app-container {
-    width: 100%;
-    max-width: 800px;            /* zwiększona szerokość */
-    margin: auto;
-    padding: 1rem;
-    background: var(--tile-bg);
-    border-radius: 12px;
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.6), -4px -4px 8px rgba(255,255,255,0.05);
-}
 
 .category-row {
     display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-columns: repeat(7, 1fr);
     gap: 0.75rem;
     margin: 1rem 0;
     padding: 0 0.5rem;
@@ -47,10 +38,10 @@ body {
 }
 
 .guesses-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 1rem;
-    overflow-x: auto;           /* przewijanie w razie potrzeby */
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
 }
 
 .congrats {
