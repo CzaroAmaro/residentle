@@ -66,7 +66,7 @@ export default function App() {
             {isSolved && (
                 <>
                     <div className="congrats">
-                        🎉 Brawo! To {solution.name}! 🎉
+                        🎉 Congrats! Its {solution.name}! 🎉
                     </div>
                     <Confetti
                         width={width}

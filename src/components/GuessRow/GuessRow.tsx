@@ -28,15 +28,23 @@ function GuessRow({ guess, solution }: Props) {
                 const guessVal = char ? String(char[prop]) : '';
                 const solVal = String(solution[prop]);
 
-                const exact = char ? guessVal === solVal : false;
+                const exact = char ? guessVal.toLowerCase() === solVal.toLowerCase() : false;
                 let partial = false;
 
-                if (char && solVal.includes(',')) {
-                    const items = solVal.split(',').map(s => s.trim().toLowerCase());
-                    partial = items.some(item => {
-                        const g = guessVal.toLowerCase();
-                        return item !== g && (item.includes(g) || g.includes(item));
-                    });
+                if (char && !exact) {
+                    // Split both values into arrays of trimmed lowercase items
+                    const solItems = solVal.split(',')
+                        .map(s => s.trim().toLowerCase())
+                        .filter(s => s.length > 0);
+
+                    const guessItems = guessVal.split(',')
+                        .map(g => g.trim().toLowerCase())
+                        .filter(g => g.length > 0);
+
+                    // Check for any common items
+                    partial = solItems.some(solItem =>
+                        guessItems.some(guessItem => guessItem === solItem)
+                    );
                 }
 
                 const tileClass = exact ? 'correct' : partial ? 'partial' : '';
