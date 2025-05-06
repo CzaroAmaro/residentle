@@ -40,14 +40,14 @@ function GuessRow({ guess, solution }: Props) {
                 }
 
                 const tileClass = exact ? 'correct' : partial ? 'partial' : '';
-                const animationDelay = `${index * 0.4}s`; // Zwiększone opóźnienie dla lepszego efektu
+                const animationDelay = `${index * 0.4}s`;
 
                 return (
                     <div
                         key={prop}
                         className={`guess-tile ${tileClass}`}
                         style={{ animationDelay }}
-                        data-reveal={!!char} // Dodajemy atrybut danych do sterowania animacją
+                        data-reveal={!!char}
                     >
                         <div className="tile-front">?</div>
                         <div className="tile-back">{char ? guessVal : '–'}</div>
